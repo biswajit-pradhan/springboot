@@ -33,7 +33,4 @@ public class MyController {
 		System.out.println("Dashboard in controller..");
 		return "WEB-INF/jsps/products.jsp";
 		}
-	
-	
-
 }
