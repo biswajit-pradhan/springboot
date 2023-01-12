@@ -1,0 +1,39 @@
+package com.shoping.app.main.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+	static {
+		System.out.println("Controller..");
+	}
+	@RequestMapping("/")
+	public String showDashboard() {
+		System.out.println("Dashboard in controller..");
+		return "WEB-INF/jsps/dashboard.jsp";
+		}
+	@RequestMapping("/")
+	public String showDashboard() {
+		System.out.println("Dashboard in controller..");
+		return "WEB-INF/jsps/dashboard.jsp";
+		}
+	@RequestMapping("/")
+	public String showDashboard() {
+		System.out.println("Dashboard in controller..");
+		return "WEB-INF/jsps/dashboard.jsp";
+		}
+	@RequestMapping("/")
+	public String showDashboard() {
+		System.out.println("Dashboard in controller..");
+		return "WEB-INF/jsps/dashboard.jsp";
+		}
+	@RequestMapping("/products")
+	public String showProducts() {
+		System.out.println("Dashboard in controller..");
+		return "WEB-INF/jsps/products.jsp";
+		}
+	
+	
+
+}

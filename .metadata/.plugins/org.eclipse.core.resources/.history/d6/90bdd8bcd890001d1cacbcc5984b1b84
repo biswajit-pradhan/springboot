@@ -1,0 +1,10 @@
+package com.flightbook.app.model;
+
+import javax.persistence.*;
+
+
+@Entity
+public class Customer {
+	@Id
+	private int Id;
+}

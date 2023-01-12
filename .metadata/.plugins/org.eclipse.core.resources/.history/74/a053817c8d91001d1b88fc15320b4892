@@ -1,0 +1,31 @@
+package com.spring.main;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class App extends AbstractAnnotationConfigDispatcherServletInitializer{
+	
+	static{
+		System.out.println("App Initializer Called");
+	}
+	@Override
+	protected Class<?>[] getRootConfigClasses() {
+		// TODO Auto-generated method stub
+		System.out.println("getRootConfigClass called..");
+		return null;
+	}
+
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		System.out.println("getServletMappings called");
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

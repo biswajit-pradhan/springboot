@@ -1,0 +1,8 @@
+package com.flightbook.app.model;
+
+import javax.persistence.*;
+
+@Entity
+public class Flight {
+
+}
