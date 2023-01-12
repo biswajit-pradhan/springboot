@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.app.main.model.Employee;
@@ -58,6 +59,29 @@ public class MyController {
 
 		mav.addObject("slist", list);
 		return mav;
+	}
+	@RequestMapping("/add-employee")
+	public String readEmployeeDetails(@RequestParam("ename") String name,
+			@RequestParam("ecity") String city, @RequestParam("esalary") double salary,HttpServletRequest request) {
+		
+		Employee e=new Employee();
+		e.setName(name);
+		e.setCity(city);
+		e.setSalary(salary);
+		System.out.println(e);
+		
+		//employee e must go to DB
+		
+		String cpath= request.getContextPath();
+		return "redirect: "+cpath+"/employees";
+		
+	}
+	@RequestMapping("/sample-link")
+	public String sampleLink(@RequestParam("name") String name,@RequestParam("city") String city,HttpServletRequest request) {
+		System.out.println(name);
+		System.out.println(city);
+		String cpath= request.getContextPath();
+		return "redirect: "+cpath+"/students";
 	}
 
 }
