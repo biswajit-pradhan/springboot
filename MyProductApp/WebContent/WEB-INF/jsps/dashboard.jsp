@@ -9,8 +9,8 @@
 <body>
 <h1>Dashboard Here</h1>
 <div>
-<a href="${pageContext.request.contextPath }/all-products">All Products</a><br/>
-<a href="${pageContext.request.contextPath }/add-product">Add Products</a><br/>
+<a href="${pageContext.request.contextPath }/all-products">All Products</a><p>    </p>
+<a href="${pageContext.request.contextPath }/add-products">Add Products</a>
 </div>
 </body>
 </html>

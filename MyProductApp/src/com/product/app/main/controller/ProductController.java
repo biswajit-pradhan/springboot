@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.product.app.main.model.*;
+import com.product.app.main.service.*;
+
 @Controller
 public class ProductController {
 	static {
@@ -28,11 +31,25 @@ public class ProductController {
 		System.out.println("Dashboard in controller..");
 		return "WEB-INF/jsps/dashboard.jsp";
 	}
-	@RequestMapping("/add-product")
+//	@RequestMapping("/add-product")
+//	public String addProducts(@RequestParam("id") int id,@RequestParam("title") String title,@RequestParam("price") double price,@RequestParam("rating") double rating,HttpServletRequest request) {
+//		Product product=new Product();
+//		product.setId(id);
+//		product.setPrice(price);
+//		product.setRating(rating);
+//		product.setTitle(title);
+//		String cpath= request.getContextPath();
+//		return "redirect: "+cpath+"/add-product";
+//	}
+	@RequestMapping("/add-products")
 	public String addProducts() {
-		System.out.println("Dashboard in controller..");
-		return "WEB-INF/jsps/dashboard.jsp";
+//		Product product=new Product();
+//		product.setId(pid);
+//		product.setPrice(pprice);
+//		product.setRating(prating);
+//		product.setTitle(ptitle);
+//		System.out.println(product);
+		System.out.println("Products in controller..");
+		return "WEB-INF/jsps/products.jsp";
 	}
-	
-	
 }

@@ -1,6 +1,5 @@
 package com.spring.app.main.service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,5 +18,16 @@ public class EmployeeService {
 		List<Employee> list=Arrays.asList(e1,e2,e3);
 		
 		return list;
+	}
+	
+	public void saveEmployee(Employee employee) {
+		//Go to DB and save this object
+		System.out.println("Employee data inserted in DB"+ employee);
+	}
+
+	public void deleteEmployee(int id) {
+		//Go to db and delete this object
+		System.out.println("Employee data deleted");
+		
 	}
 }
