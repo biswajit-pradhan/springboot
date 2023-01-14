@@ -3,14 +3,14 @@ package com.product.app.main.model;
 public class Product {
 	private int id;
 	private String title;
-	private int price;
+	private double price;
+	private double rating;
+	public Product() {}
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", title=" + title + ", price=" + price + ", rating=" + rating + "]";
 	}
-	private int rating;
-	public Product() {}
-	public Product(int id, String title, int price, int rating) {
+	public Product(int id, String title, double price, double rating) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -29,18 +29,19 @@ public class Product {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getRating() {
+	public double getRating() {
 		return rating;
 	}
-	public void setRating(int rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
+	
 	
 	
 }
