@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="FoodDeliveryApp"/>
 			<item value="MyProductApp"/>
 			<item value="MyShopingPortal"/>
 			<item value="MySpringApp"/>
@@ -11,6 +12,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="FoodDeliveryApp"/>
 			<item value="MyProductApp"/>
 			<item value="MyShopingPortal"/>
 			<item value="MySpringApp"/>
