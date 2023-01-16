@@ -8,19 +8,19 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="projects")
+@Table(name = "projects")
 public class Project {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int id; 
 	
 	@Column(name="project_title")
-	private String title;
+	private String title; 
 	
-	@Column(name="project_credits")
+	@Column(name = "project_credits")
 	private int credits;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -44,6 +44,6 @@ public class Project {
 	public void setCredits(int credits) {
 		this.credits = credits;
 	}
-
+	
 	
 }

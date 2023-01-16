@@ -17,52 +17,35 @@ import javax.persistence.Table;
 import com.bootapp.rest.restapp.enums.Gender;
 
 @Entity
-@Table(name="employee") //optional
+@Table(name = "employees") //Optional
 public class Employee {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int id; 
 	
 	@Column(name="emp_name")
-	private String name; //emp_name
+	private String name;  
 	
-	@Column(name="emp_city")
-	private String city; //emp_city
+	@Column(name = "emp_city") 
+	private String city; 
 	
-	@Column(name="emp_salary")
+	@Column(name = "emp_salary")
 	private double salary;
 	
 	@Column(name="emp_joining_date")
 	private LocalDate joiningDate;
-	
+
 	@Enumerated(EnumType.STRING)
-	private Gender gender;
+	private Gender gender; 
 	
 	@ManyToOne
 	private Department department;
 	
 	@ManyToMany
-	private List<Project> projects; //id=1, pid:[1,2,7]
-
-	public Department getDepartment() {
-		return department;
-	}
-
-	public void setDepartment_id(Department department) {
-		this.department = department;
-	}
-
-	public Gender getGender() {
-		return gender;
-	}
-
-	public void setGender(Gender gender) {
-		this.gender = gender;
-	}
-
-	public int getId() {
+	private List<Project> projects;  //id: 1, pid:[1,2,7]
+	
+	public int getId() { 
 		return id;
 	}
 
@@ -101,7 +84,22 @@ public class Employee {
 	public void setJoiningDate(LocalDate joiningDate) {
 		this.joiningDate = joiningDate;
 	}
-	
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
 	
 	
 }

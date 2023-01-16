@@ -1,6 +1,5 @@
 package com.bootapp.rest.restapp.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,13 +8,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Department {
-
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	
-	@Column(name= "dept_name")
+
+	@Column(name = "dept_name")
 	private String name;
 
 	public int getId() {
@@ -33,5 +30,5 @@ public class Department {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }
