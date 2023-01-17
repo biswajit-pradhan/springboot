@@ -1,6 +1,7 @@
 package com.bootapp.rest.restapp.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,9 +21,13 @@ public class InstructorService {
 
 	}
 
-	public List<Instructor> getInstructor() {
-		// TODO Auto-generated method stub
+	public List<Instructor> getAllInstructor() {
 		List<Instructor> list=instructorRepository.findAll();
 		return list;
+	}
+
+	public Optional<Instructor> getInstructorById(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
