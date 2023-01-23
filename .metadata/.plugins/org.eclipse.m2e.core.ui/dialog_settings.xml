@@ -29,8 +29,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\BISWPRAD\Downloads\MyBootApp"/>
+			<item value="C:\Users\BISWPRAD\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\MyBootApp"/>
 			<item value="C:\Users\BISWPRAD\OneDrive - Capgemini\Desktop\MyBootApp"/>
+			<item value="C:\Users\BISWPRAD\Downloads\MyBootApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
